@@ -1,0 +1,334 @@
+$color-main: #21465A;
+$color-secondary: #0E9C9B;
+$color-third: #B3D5B1;
+$color-fourth: #B1965A;
+$color-fith: #DE5F40;
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    margin: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $color-secondary;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $color-third;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #ffffff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    min-height: 100vh;
+
+    h1, h2, h3, img, video {
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#id01 {
+    input[type=text], input[type=password] {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+}
+  
+button {
+    background-color: $color-secondary;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width:auto;
+    margin-right: 0.5em;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: $color-fith;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.container {
+    padding: 16px;
+    background-color:#f1f1f1;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: $color-fith;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+#top {
+    background-color: $color-main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+
+    span {
+        margin-left: 0.5em;
+        color: white;
+    }
+    #logo {
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (min-width: 350px) {
+        img {
+            width: 50%;
+            height: 100%;
+        }
+    }
+    div {
+        display: flex;
+        justify-content: right;
+        button{
+            max-width: 10em;
+        }
+    }
+}
+
+footer { 
+    background-color: $color-main;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a {
+        color: white;
+    }
+}
+
+#sport, #add {
+    display: none; /* Hidden by default */
+    padding-top: 60px;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+#add, #sport {
+    
+    input[type=password], input[type=email], input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        width: 100%;
+        height: 5em;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    @media only screen and (min-width: 1200px) {
+        div {
+            margin-left: 30%;
+            margin-right: 30%;
+            text-align: center;
+        }
+    }
+}
+
+#athlete {
+    width: 40%;
+    height: 40%;
+}
+
+#open {
+    font-size:1em;
+    cursor:pointer;
+}
+
+#pop-sports {
+    display: flex;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+#prom-fig {
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+}
+
+iframe {
+    width: 80%;
+    min-height: 200px;
+    margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 400px) {
+    iframe {
+        width: 80%;
+        min-height: 400px;
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    iframe {
+        width: 80%;
+        min-height: 600px;
+        margin-bottom: 2em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    iframe {
+        width: 80%;
+        min-height: 700px;
+        margin-bottom: 2em;
+    }
+}
+
+#adders {
+    display: flex;
+    justify-content: center;
+}
+
+#main-links {
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    li:hover {
+        color:rgb(73, 73, 73)
+    }
+}
+
+#intro {
+    margin-left: 1em;
+    margin-right: 1em;
+}

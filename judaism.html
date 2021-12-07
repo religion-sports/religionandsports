@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Judaism</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="hinduism.html">Hinduism</a>
+        <a href="jainism.html">Jainism</a>
+        <a href="buddhism.html">Buddhism</a>
+        <a href="sikhism.html">Sikhism</a>
+        <a href="taoism.html">Taoism</a>
+        <a href="confucianism.html">Confucianism</a>
+        <a href="shinto.html">Shinto</a>
+        <a href="zoroastrianism.html">Zoroastrianism</a>
+        <a href="judaism.html">Judaism</a>
+        <a href="christianity.html">Christianity</a>
+        <a href="islam.html">Islam</a>
+        <a href="churchofjesuschrist.html">Church of Jesus Christ of Latter Day Saints</a>
+    </div>
+    <div id="main">
+        <div id="top">
+          <span id="open" onclick="openNav()">&#9776;</span>
+            <div id="logo">
+              <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <div>
+              <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+            </div>
+        </div>
+
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+        </div>
+
+        <h1>Judaism</h1>
+        <div>
+            <h2>Popular Sports</h2>
+            <div id="pop-sports">
+              <ul id="sports"></ul>
+            </div>
+        </div>
+        <div>
+            <h2>Prominent Sports Figures</h2>
+            <div id="prom-fig">
+            </div>
+        </div>
+        <div id="adders">
+          <button onclick="viewAdder()">Add Person</button>
+          <button onclick="viewAdderSports()">Add Sport</button>
+        </div>
+        <div id="add">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="photo">Photo (link):</label><br>
+            <input type="text" name="photo" id="photo" required><br><br>
+            <label for="description">Description:</label><br>
+            <textarea name="description" id="description" required></textarea><br><br>
+            <label for="video">Video (youtube embed link):</label><br>
+            <input type="text" name="video" id="video" required><br><br>
+              
+            <button id="submit-add" type="submit">Submit</button>
+        </div>
+        <div id="sport">
+          <label for="sportName">Sport:</label><br>
+          <input type="text" name="sportName" id="sportName" required><br><br>            
+          <button id="submit-sport" type="submit">Submit</button>
+        </div>
+    </div>
+    <footer>
+      <div>
+          <p>Author: Tyler Houssian</p>
+      </div>
+      <div>
+          <a href="mailto:tylerhoussian@gmail.com">tylerhoussian@gmail.com</a>
+      </div>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+<script src="js/jud_page.js" type="module"></script>
+<script src="js/page.js"></script>
+</html>

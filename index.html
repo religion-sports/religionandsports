@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Religion & Sports</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="hinduism.html">Hinduism</a>
+        <a href="jainism.html">Jainism</a>
+        <a href="buddhism.html">Buddhism</a>
+        <a href="sikhism.html">Sikhism</a>
+        <a href="taoism.html">Taoism</a>
+        <a href="confucianism.html">Confucianism</a>
+        <a href="shinto.html">Shinto</a>
+        <a href="zoroastrianism.html">Zoroastrianism</a>
+        <a href="judaism.html">Judaism</a>
+        <a href="christianity.html">Christianity</a>
+        <a href="islam.html">Islam</a>
+        <a href="churchofjesuschrist.html">Church of Jesus Christ of Latter Day Saints</a>
+    </div>
+    <div id="main">
+        <div id="top">
+            <span id="open" onclick="openNav()">&#9776;</span>
+              <div id="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+              </div>
+              <div>
+                <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+              </div>
+          </div>
+  
+          <div id="id01" class="modal">
+    
+            <form class="modal-content animate" action="" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+        
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+        
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                <button type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+        
+            <div class="container">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+            </form>
+        </div>
+        <section>
+            <h1>Religion & Sports</h1>
+            <p id="intro">Through history, there has been humankind has been interested in competitve
+                events and games that vary by area, culture, and religion. These games many
+                times not only impact the lives of those that play them but also the fans
+                and influence they have on society. This website is to explore the most prominent
+                sports and sport figures within each of the 12 major world religions.
+            </p>
+        </section>
+        <section id="main-links">
+            <ul>
+                <a href="hinduism.html"><li>Hinduism</li></a>
+                <a href="jainism.html"><li>Jainism</li></a>
+                <a href="buddhism.html"><li>Buddhism</li></a>
+                <a href="sikhism.html"><li>Sikhism</li></a>
+                <a href="taoism.html"><li>Taoism</li></a>
+                <a href="confucianism.html"><li>Confucianism</li></a>
+                <a href="shinto.html"><li>Shinto</li></a>
+                <a href="zoroastrianism.html"><li>Zoroastrianism</li></a>
+                <a href="judaism.html"><li>Judaism</li></a>
+                <a href="christianity.html"><li>Christianity</li></a>
+                <a href="islam.html"><li>Islam</li></a>
+                <a href="churchofjesuschrist.html"><li>Church of Jesus Christ of Latter Day Saints</li></a>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <div>
+            <p>Author: Tyler Houssian</p>
+        </div>
+        <div>
+            <a href="mailto:tylerhoussian@gmail.com">tylerhoussian@gmail.com</a>
+        </div>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+</html>
