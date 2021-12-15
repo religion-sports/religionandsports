@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <title>Confucianism</title>
+    <title>Islam</title>
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
@@ -62,39 +62,16 @@
             </form>
         </div>
 
-        <h1>Confucianism</h1>
-        <div>
-            <h2>Popular Sports</h2>
-            <div id="pop-sports">
-              <ul id="sports"></ul>
-            </div>
-        </div>
-        <div>
-            <h2>Prominent Sports Figures</h2>
-            <div id="prom-fig">
-            </div>
-        </div>
-        <div id="adders">
-          <button onclick="viewAdder()">Add Person</button>
-          <button onclick="viewAdderSports()">Add Sport</button>
-        </div>
-        <div id="add">
-            <label for="name">Name:</label><br>
-            <input type="text" name="name" id="name" required><br><br>
-            <label for="photo">Photo (link):</label><br>
-            <input type="text" name="photo" id="photo" required><br><br>
-            <label for="description">Description:</label><br>
-            <textarea name="description" id="description" required></textarea><br><br>
-            <label for="video">Video (youtube embed link):</label><br>
-            <input type="text" name="video" id="video" required><br><br>
-              
-            <button id="submit-add" type="submit">Submit</button>
-        </div>
-        <div id="sport">
-          <label for="sportName">Sport:</label><br>
-          <input type="text" name="sportName" id="sportName" required><br><br>            
-          <button id="submit-sport" type="submit">Submit</button>
-        </div>
+        <h1>Stats</h1>
+        <h2>Kareem's Regular Season Stats</h2>
+        <div id="kareem"></div>
+        <h2>Hakeem's Regular Season Stats</h2>
+        <div id="hakeem"></div>
+
+        <h2>Kareem's Post Season Stats</h2>
+        <div id="kareem2"></div>
+        <h2>Hakeem's Post Season Stats</h2>
+        <div id="hakeem2"></div>
     </div>
     <footer>
       <div>
@@ -106,6 +83,6 @@
     </footer>
 </body>
 <script src="js/main.js"></script>
-<script src="js/con_page.js" type="module"></script>
 <script src="js/page.js"></script>
+<script src="js/stats.js"></script>
 </html>
