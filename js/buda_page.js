@@ -65,7 +65,7 @@ submit.onclick = function(event) {
         "video": video
     }
     
-    islam_info.push(newInfo);
+    buda_info.push(newInfo);
     add_info();
 }
 
